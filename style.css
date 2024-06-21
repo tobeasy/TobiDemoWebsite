@@ -27,3 +27,84 @@ section {
     transform: translateX(0);
     opacity: 1;
 }
+
+/* Navigation bar */
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+h1 {
+    text-align: center;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(124, 124, 124);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.navbar .navbarItem{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar button{
+    color: white;
+    background-color: rgba(245, 245, 220, 0);
+    border: none;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.navbar li{
+    float: left;
+}
+
+.dropdown{
+    display: inline-block;
+	z-index: 100000;
+}
+
+.dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown .content{
+    display: none;
+    background-color: rgb(228, 228, 228);
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.dropdown:hover .content{
+    display: block;
+}
+
+.dropdown:hover .navbarItem{
+    background-color: black;
+    box-shadow: 0px 0px 50px black;
+}
+
+.dropdown a:hover{
+    cursor: pointer;
+    background-color: rgb(197, 138, 11);
+    box-shadow: 0px 0px 35px rgb(197, 138, 11);
+}
