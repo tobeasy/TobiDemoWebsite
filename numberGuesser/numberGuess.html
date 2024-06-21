@@ -1,22 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <link rel="stylesheet" href="numberGuess.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
+
 <body>
-    <input type="text" id="input"><br>
-    <p>
-        <button type="submit" id="submit">Submit</button><br>
-    </p>
-    <p>
-        <label id="hint"></label>
-    </p>
-    <p>
-        <label id="attempt"></label>
-    </p>
-    <script src="numberGuess.js"></script>
+    <nav class="navbar">
+        <ul>
+            <li>
+                <div class="dropdown">
+                    <a href="../index.html" class="navbarItem">Main</a>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a class="navbarItem">Tools</a>
+                    <div class="content">
+                        <a href="numberGuess.html">Number guesser</a>
+                        <a href="../counter/counter.html">Counter</a>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="dropdown">
+                    <a class="navbarItem">Information</a>
+                    <div class="content">
+                        <a href="">TODO</a>
+                        <a href="">TODO</a>
+                        <a href="">TODO</a>
+                    </div>
+                </div>
+            </li>
+
+        </ul>
+    </nav>
+    <div style="margin-top: 80px; text-align: center;">
+        <input style="font-size: 1em;
+        padding-top: 5px;
+        padding-bottom: 5px;" type="text" id="input"><br>
+        <p>
+            <button type="submit" id="submit">Submit</button><br>
+        </p>
+        <p>
+            <label id="hint"></label>
+        </p>
+        <p>
+            <label id="attempt"></label>
+        </p>
+        <script src="numberGuess.js"></script>
+    </div>
 </body>
+
 </html>

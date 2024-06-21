@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <link rel="stylesheet" href="counter.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
     <nav class="navbar">
 		<ul>
             <li>
-				<div>
-					<a href="index.html" class="navbarItem">Main</a>
+				<div class="dropdown">
+					<a href="../index.html" class="navbarItem">Main</a>
 				</div>
 			</li>
 			<li>
 				<div class="dropdown">
 					<a class="navbarItem">Tools</a>
 					<div class="content">
-						<a href="numberGuesser/numberGuess.html">Number guesser</a>
-						<a href="counter/index.html">Counter</a>											
+						<a href="../numberGuesser/numberGuess.html">Number guesser</a>
+						<a href="..counter.html">Counter</a>											
 					</div>
 				</div>
 			</li>
@@ -37,7 +37,7 @@
 		</ul>
 	</nav>
 
-    <label id="countLabel">0</label><br>
+    <label style="margin-top: 30px;" id="countLabel">0</label><br>
     <div id="btnContainer">
         <button id="decrease" class="buttons">Decrease</button>
         <button id="reset" class="buttons">Reset</button>

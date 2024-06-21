@@ -28,6 +28,34 @@ section {
     opacity: 1;
 }
 
+button{
+    padding:10px 20px;
+    font-size: 1.5em;
+    color: white;
+    border: none;
+    background-color: rgb(197, 138, 11);
+    box-shadow: 0px 0px 15px rgb(197, 138, 11);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0,25s;
+}
+
+button:hover{
+    background-color: black;
+    box-shadow: 0px 0px 15px black;
+}
+
+/* Counter */
+#countLabel{
+    display: block;
+    text-align: center;
+    font-size: 10em;
+}
+
+#btnContainer{
+    text-align: center;
+}
+
 /* Navigation bar */
 main{
     margin-left: 20px;
