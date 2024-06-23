@@ -20,7 +20,7 @@
                 <div class="dropdown">
                     <a class="navbarItem">Tools</a>
                     <div class="content">
-                        <a href="numberGuess.html">Number guesser</a>
+                        <a href="../numberGuesser/numberGuess.html">Number guesser</a>
                         <a href="../counter/counter.html">Counter</a>
                         <a href="../textFormatter/textFormatter.html">Text-formatter</a>
                     </div>
@@ -39,21 +39,27 @@
 
         </ul>
     </nav>
-    <div style="margin-top: 80px; text-align: center;">
-        <input style="font-size: 1em;
-        padding-top: 5px;
-        padding-bottom: 5px;" type="text" id="input"><br>
-        <p>
-            <button type="submit" id="submit">Submit</button><br>
-        </p>
-        <p>
-            <label id="hint"></label>
-        </p>
-        <p>
-            <label id="attempt"></label>
-        </p>
-        <script src="numberGuess.js"></script>
+    <div style="margin-top: 80px; position: absolute; left: 20%;">
+        <label style="margin-top: 40px;">Enter text:</label><br>
+        <textarea id="textFormatInput"></textarea><br>
+
+        <label>Choose Format:</label><br>
+        <form>
+            <input type="radio" id="h1Radio" name="format">
+            <label>H1</label><br>
+            <input type="radio" id="pRadio" name="format">
+            <label>P</label><br>
+            <input type="radio" id="boldRadio" name="format">
+            <label>Bold</label><br>
+            <input type="radio" id="italicRadio" name="format">
+            <label>Italic</label><br>
+
+            <input type="submit" id="textFormatSubmit" value="Add">
+        </form>
+
+        <div id="textFormatOutput"></div>
     </div>
+
 </body>
 
 </html>
